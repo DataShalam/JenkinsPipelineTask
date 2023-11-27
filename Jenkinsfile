@@ -18,5 +18,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        echo 'Test Is Done!'
+      }
+    }
+
   }
 }
