@@ -1,15 +1,23 @@
 pipeline {
   agent any
   stages {
-    stage('Two Parallel Stages') {
+    stage('Build') {
+      steps {
+        echo 'Starting Build'
+        sh 'checkout scm'
+        echo 'Build Completed'
+      }
+    }
+
+    stage('Parallel Stages') {
       parallel {
-        stage('Run Maven Project') {
+        stage('Run Maven') {
           steps {
             sh 'sh \'mvn clean test\''
           }
         }
 
-        stage('Get Maven Version ') {
+        stage('Maven Version') {
           steps {
             sh 'sh \'mvn --version\''
           }
