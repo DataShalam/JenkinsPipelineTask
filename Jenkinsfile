@@ -5,13 +5,13 @@ pipeline {
       parallel {
         stage('Maven run') {
           steps {
-            sh 'mvn clean test'
+            bat 'mvn clean test'
           }
         }
 
         stage('Maven Version') {
           steps {
-            sh 'mvn --version'
+            bat 'mvn --version'
           }
         }
 
