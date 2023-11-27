@@ -13,13 +13,13 @@ pipeline {
       parallel {
         stage('Run Maven') {
           steps {
-            sh 'sh \'mvn clean test\''
+            sh 'mvn clean test'
           }
         }
 
         stage('Maven Version') {
           steps {
-            sh 'sh \'mvn --version\''
+            sh 'mvn --version'
           }
         }
 
