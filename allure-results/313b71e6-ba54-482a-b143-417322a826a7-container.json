@@ -1,0 +1,1 @@
+{"uuid":"313b71e6-ba54-482a-b143-417322a826a7","name":"JenkinsPipelineTask","children":["7fd828e7-d6d7-4088-aa72-41ddabef9ea1"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1701097444203,"stop":1701097444218}],"afters":[],"start":1701097444179,"stop":1701097465922}
