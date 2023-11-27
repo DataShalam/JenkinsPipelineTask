@@ -13,7 +13,7 @@ pipeline {
       parallel {
         stage('Run Maven') {
           steps {
-            sh 'mvn clean test'
+            sh 'mvn test'
           }
         }
 
